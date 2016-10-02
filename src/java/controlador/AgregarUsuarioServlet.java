@@ -51,7 +51,6 @@ public class AgregarUsuarioServlet extends HttpServlet {
             usu.setEdad(Integer.parseInt(edad));
             
             CrudUsuario crudUsuario = new CrudUsuario();
-            crudUsuario.agregarUsuario(usu);
             
             if(crudUsuario.agregarUsuario(usu) == true){
                 String mensaje = "Se insertó correctamente";
